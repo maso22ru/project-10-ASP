@@ -3,6 +3,21 @@ html, body {
     line-height: 20px;
 }
 
+@font-face {
+    font-family: inter;
+    src: url(Inter-Regular.ttf)
+  }
+
+@font-face {
+    font-family: interLight
+    src: url(Inter-Light.ttf)
+}
+
+/* https://www.w3schools.com/css/css3_fonts.asp */
+
+
+  
+
 .container {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -18,12 +33,22 @@ html, body {
     display: grid;
     grid-area: header;
     background-color: #96A990;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header1 header2 header3 header4";
+    flex: content;
+    align-content: center;
+    justify-content: center;
+
+
 }
 
 .content {
     display: grid;
     grid-area: content;
     background-color:beige;
+    font-family: inter;
 }
 
 .footer {
@@ -32,3 +57,28 @@ html, body {
     background-color: rgba(150, 169, 144, 0.5);
 }
 
+
+.logo {
+    background-color: blue;
+    grid-area: header1;
+    max-width: 100px;
+
+    position: absolute;
+    left: 3%;
+    right: 90%;
+    top: 2%;
+    bottom: 97%;
+} 
+
+.cathegory {
+    background-color: aqua;
+    display: grid;
+    grid-area: header2;
+    font-size: 0.7em;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding: 9%;
+    display: flex;
+    justify-content:space-between;
+}

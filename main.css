@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: Inter;
     /* background-image: url(images/unsplash-background.jpg);
     background-size: 100vw, 80vh; */
 }
@@ -25,18 +26,24 @@ body {
     column-gap: 10px;
     align-items: center;
 }
+
+.footer {
+    background-color:  #96A990;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: footer;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    padding-left: 10%;
+    padding-bottom: 14%;
+}
+
 /*cssgrid-generator.netlify.app used to found our grid*/
 
-/* .category {
-    justify-self: left;
-    font-family: Inter;
-    padding: 10%;
-    grid-auto-flow: column;
 
-} */
-
-body {
-    font-family: Inter;
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .category {
@@ -66,7 +73,6 @@ body {
 .asp {
     grid-area: 1 / 1 / 2 / 2;
     padding: 10%;
-   
 }
 
 .account {
@@ -106,22 +112,23 @@ body {
     text-align: right;
 }
 
+.content {
+    display: grid;
+    display: grid;
+    grid-area: content;
+}
+
 .content_first_page{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     margin: 15%;
     text-align: center;
-    row-gap: 200px;
-    
-    
-    
+    row-gap: 200px;  
 }
 
 .front_img2 {
     display: flex;
     margin-left: 15%;
-    
 }
 
 h3 {
@@ -130,24 +137,9 @@ h3 {
     padding-top: 10%;
 }
 
-.content {
-    display: grid;
-    /* background-color: cornflowerblue; */
-    display: grid;
-    grid-area: content;
-}
 
-.footer {
-    background-color:  #96A990;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-area: footer;
-    line-height: 2rem;
-    font-size: 0.7rem;
-    padding-left: 10%;
-    padding-bottom: 14%;
 
-}
+
 
 /* @import url('https://fonts.googleapis.com/css?family=Inter&display=swap'); */
 
@@ -163,23 +155,75 @@ h3 {
 
 
 
-/* PRODUCT PAGE! */
+
+/* --------------- PRODUCT PAGE!--------------- */
 
 
 
 
 
+
+
+
+.container_2 {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 6rem 1fr 5fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "block block block"
+    "content content content"
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+
+.top_content_productpage {
+    display: grid;
+    grid-area: block;
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 3%;
+}
 
 .content_productpage {
     display: grid;
     grid-area: content;
     grid-template-columns: repeat(3, 1fr);
-    
     column-gap: 5%;
-    background-color: antiquewhite;
     margin: 8%;
+    margin-top: 0px;
     justify-items: center;
     align-content: center;
+}
+
+/* code from lecture with Garrit */
+
+button {
+    width: 6rem;
+}
+
+.filter {
+    display: flex;
+    background-color:  #96A990;
+    letter-spacing: 4px;
+    align-content:  left;
+    align-items: left;
+    text-align: center;
+}
+
+.woman_pp {
+    font-weight: 100;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+.blazers {
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 0rem;
 }
 
 .product_image {
@@ -187,6 +231,28 @@ h3 {
     max-height: 100%
 }
 
+/* Pictures from Gina tricot */
+
 .product_text {
-    padding-bottom: 40%;
+    padding-bottom: 25%;
+}
+
+
+
+
+
+
+
+/* --------------------- PRODUCT PAGE!-------------------- */
+
+
+
+
+
+
+
+.content_itempage {
+    grid-area: content;
+    background-color: beige;
+    margin: 8%;
 }

@@ -147,7 +147,18 @@ h3 {
     font-family: Inter;
     src: url(assets/Inter-Regular.ttf) format('truetype');
 }
+
+@font-face {
+    font-family: InterLight;
+    src: url(assets/Inter-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: InterSemibold;
+    src: url(assets/Inter-SemiBold.ttf) format('truetype');
+}
 /* https://www.w3schools.com/css/css3_fonts.asp */
+
 
 
 
@@ -201,9 +212,7 @@ h3 {
 
 /* code from lecture with Garrit */
 
-button {
-    width: 6rem;
-}
+
 
 .filter {
     display: flex;
@@ -212,6 +221,8 @@ button {
     align-content:  left;
     align-items: left;
     text-align: center;
+    width: 6rem;
+    border-style: hidden;
 }
 
 .woman_pp {
@@ -243,16 +254,129 @@ button {
 
 
 
-/* --------------------- PRODUCT PAGE!-------------------- */
+/* --------------------- item PAGE!-------------------- */
 
 
 
 
 
 
+.container_3 {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 6rem 4rem 5fr 4fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "block1 block1 block1"
+    "block2 block2 block2"
+    "block3 block3 block3"
+    /* "content content content" */
+    "footer footer footer";
+    min-height: 100vh;
+}
 
-.content_itempage {
-    grid-area: content;
-    background-color: beige;
-    margin: 8%;
+.block1 {
+    grid-area: block1;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+
+}
+
+.block2 {
+    grid-area: block2;
+    /* background-color: rgb(115, 87, 141); */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    column-gap: 3rem;
+    margin: 5%;
+}
+
+.block3 {
+    grid-area: block3;
+    background-color: rgb(187, 161, 210);
+}
+
+.small_items_img {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+}
+
+/* .bild1 {
+    max-width: 100%;
+    height: auto;
+} */
+
+.big_items_img {
+
+}
+
+.item_description {
+    display: grid;
+    /* grid-template-rows: repeat(5, 1fr 1fr 1fr 1fr 3fr); */
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 4fr;
+}
+
+.colourbox {
+    display: flex;
+    background-color:  #d9d9d9;
+    letter-spacing: 4px;
+    width: 15rem;
+    height: 2rem;
+    border-style: hidden;
+    justify-content: right;
+    align-items: center;
+}
+
+.size_buttons {
+    /* background-color: rgb(232, 232, 170); */
+    display: flex;
+    justify-content: space-between;
+    max-width: 15rem;
+}
+
+button {
+    border-style: hidden;
+}
+
+.size_guide {
+    font-size: 11px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: right;
+    max-width: 15rem;
+}
+
+.add_to_bag {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    max-width: 15rem;
+    max-height: 2rem;
+    font-family: InterSemibold;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+
+.free_ship {
+    font-size: 11px;
+    letter-spacing: 0.4px;
+}
+
+span {
+    font-family: InterSemibold;
+}
+/* https://www.w3schools.com/tags/tag_span.asp */
+
+
+.rubrik_description {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.description_text_massa {
+    font-size: 11px;
+    max-width: 19rem;
+    font-family: InterLight;
 }

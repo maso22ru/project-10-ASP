@@ -5,6 +5,20 @@ body {
     background-size: 100vw, 80vh; */
 }
 
+button {
+    border-style: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    font-family: InterSemibold;
+}
+/* https://www.w3schools.com/tags/tag_span.asp */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -41,10 +55,9 @@ body {
 /*cssgrid-generator.netlify.app used to found our grid*/
 
 
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
+/* --------------------for all of the pages-------------------------- */
+
+
 
 .category {
     grid-area: 1 / 2 / 2 / 3;
@@ -261,7 +274,7 @@ h3 {
 
 
 
-.container_3 {
+.container_item_page {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 6rem 4rem 5fr 4fr 15rem;
@@ -270,12 +283,11 @@ h3 {
     "block1 block1 block1"
     "block2 block2 block2"
     "block3 block3 block3"
-    /* "content content content" */
     "footer footer footer";
     min-height: 100vh;
 }
 
-.block1 {
+.block1_item_page {
     grid-area: block1;
     margin-left: 5%;
     display: flex;
@@ -283,100 +295,147 @@ h3 {
 
 }
 
-.block2 {
+.block2_item_page {
     grid-area: block2;
-    /* background-color: rgb(115, 87, 141); */
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr 3fr;
     column-gap: 3rem;
     margin: 5%;
+    max-height: 100%;
 }
 
-.block3 {
-    grid-area: block3;
-    background-color: rgb(187, 161, 210);
-}
-
-.small_items_img {
+.block3_item_page {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 1rem;
+    grid-area: block3;
+    grid-template-rows: 3rem 7rem 1fr;
+    margin: 5%
 }
 
-/* .bild1 {
-    max-width: 100%;
-    height: auto;
+/* .item_small {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+    background-color: rgb(72, 121, 164);
 } */
 
-.big_items_img {
+.item_small {
+    background-color: rgb(72, 121, 164);
+    max-height: 90vh;
+}
 
+.small_imgs {
+    max-width: 100%;
+    max-height: auto;
+}
+ /* fråga på lab responsive bilder, row-gap? */
+
+.item_big {
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+    max-height: 90vh;
 }
 
 .item_description {
     display: grid;
-    /* grid-template-rows: repeat(5, 1fr 1fr 1fr 1fr 3fr); */
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 6fr;
+    max-height: 90vh;
 }
 
-.colourbox {
+.colour_button {
     display: flex;
     background-color:  #d9d9d9;
     letter-spacing: 4px;
-    width: 15rem;
+    max-width: 30rem;
     height: 2rem;
     border-style: hidden;
     justify-content: right;
     align-items: center;
 }
 
-.size_buttons {
-    /* background-color: rgb(232, 232, 170); */
-    display: flex;
-    justify-content: space-between;
-    max-width: 15rem;
-}
-
-button {
-    border-style: hidden;
-}
-
 .size_guide {
     font-size: 11px;
     text-decoration: underline;
-    padding-bottom: 10px;
     display: flex;
     justify-content: right;
-    max-width: 15rem;
+    max-width: 30rem;
+    padding-top: 6%;
+}
+
+.size_buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+    padding-bottom: 4%;
+}
+
+.size_button {
+    width: 12%;
+    height: 100%;
+    background-color:  #d9d9d9;
+}
+
+.size_buttons button:hover {
+    background-color: black;
+    color: white;
 }
 
 .add_to_bag {
+    display: flex;
     background-color: black;
     color: rgb(255, 255, 255);
-    max-width: 15rem;
+    max-width: 30rem;
     max-height: 2rem;
     font-family: InterSemibold;
     letter-spacing: 3px;
-    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.free_ship {
+.add_to_bag p:hover {
+    color: orange;
+}
+
+.free_shipping_text {
+    display: flex;
     font-size: 11px;
     letter-spacing: 0.4px;
+    justify-content: right;
+    max-width: 30rem;
+    text-align: start;
 }
-
-span {
-    font-family: InterSemibold;
-}
-/* https://www.w3schools.com/tags/tag_span.asp */
-
 
 .rubrik_description {
     font-size: 12px;
     letter-spacing: 2px;
+    font-family: InterSemibold;
 }
 
-.description_text_massa {
-    font-size: 11px;
-    max-width: 19rem;
+.description_text {
+    /* font-size: 11px; */
+    max-width: 30rem;
     font-family: InterLight;
+    line-height: 18px;
+}
+
+.style_with_text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    letter-spacing: 2px;
+    font-family: InterLight;
+    margin-bottom: 2%;
+    font-size: 17px;
+    
+}
+
+.style_with_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+    margin: 8%;
+    margin-top: 0px;
+    justify-items: center;
+    align-content: center;
 }

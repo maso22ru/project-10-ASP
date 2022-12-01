@@ -189,22 +189,29 @@ h3 {
 
 
 
-.container_2 {
+.container_product_page {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 6rem 1fr 5fr 15rem;
+    grid-template-rows: 6rem 4rem 20rem 1fr 15rem;
     grid-template-areas:
     "header header header" 
-    "block block block"
-    "content content content"
+    "block1 block1 block1"
+    "block2 block2 block2"
+    "block3 block3 block3"
     "footer footer footer";
     min-height: 100vh;
 }
 
+.breadcrumbs {
+    grid-area: block1;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
 
 .top_content_productpage {
     display: grid;
-    grid-area: block;
+    grid-area: block2;
     grid-template-rows: repeat(1, 1fr);
     margin-top: 3%;
     margin-left: 8%;
@@ -212,16 +219,7 @@ h3 {
     margin-bottom: 3%;
 }
 
-.content_productpage {
-    display: grid;
-    grid-area: content;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5%;
-    margin: 8%;
-    margin-top: 0px;
-    justify-items: center;
-    align-content: center;
-}
+
 
 /* code from lecture with Garrit */
 
@@ -238,16 +236,32 @@ h3 {
     border-style: hidden;
 }
 
-.woman_pp {
+.woman_rubrik {
+    display: flex;
     font-weight: 100;
     letter-spacing: 7px;
     text-align: center;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 2%;
 }
 
-.blazers {
+.blazers_rubrik {
     letter-spacing: 8px;
     text-align: center;
     line-height: 0rem;
+
+}
+
+.content_productpage {
+    display: grid;
+    grid-area: block3;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    margin: 8%;
+    margin-top: 0px;
+    justify-items: center;
+    align-content: center;
 }
 
 .product_image {
@@ -292,7 +306,6 @@ h3 {
     margin-left: 5%;
     display: flex;
     align-items: center;
-
 }
 
 .block2_item_page {

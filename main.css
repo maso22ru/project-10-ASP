@@ -452,3 +452,161 @@ h3 {
     justify-items: center;
     align-content: center;
 }
+
+
+
+
+
+/* ----------------- bag PAGE ---------------- */
+
+
+
+
+.container_bag_page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 1fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "content_bag_page content_bag_page content_bag_page"
+    /* "block1 block1 block1"
+    "block2 block2 block2" */
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+.content_bag_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
+}
+
+.block1_bag {
+    /* background-color: rgb(221, 245, 237); */
+    margin: 5%;
+    /* max-width: 40rem; */
+}
+
+.block2_bag {
+    /* background-color: rgb(212, 212, 235); */
+    margin: 5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    letter-spacing: 3px;
+    max-width: 40rem;
+
+}
+
+.value {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: InterLight;
+    line-height: 2rem;
+    font-size: 13px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.value_numbers {
+    display: flex;
+    justify-content: right;
+}
+
+.value_total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.value_total_numbers {
+    display: flex;
+    justify-content: right;
+}
+
+.proceed_to_checkout {
+    background-color: black;
+    color: white;
+    font-family: InterSemibold;
+    margin: 5%;
+    width: 90%;
+    letter-spacing: 4px;
+}
+
+.discount_code {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 5%;
+}
+
+.add {
+    background-color: black;
+    color: white;
+    font-family: InterSemibold;
+    letter-spacing: 4px;
+    margin-left: 20%;
+}
+
+.order_text {
+    font-family: InterLight;
+    font-size: 14px;
+    line-height: 3rem;
+}
+.return_text {
+    line-height: 2rem;
+    text-decoration: underline;
+}
+
+.pay_logo {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.pay_logo_img {
+    float: right;
+    width: 10%;
+    padding: 2%;
+}
+
+
+.shoppingbag_items_text {
+    letter-spacing: 3px;
+}
+    
+
+.shoppingbag_items_content {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5%;
+    min-height: 40vh;
+    margin-top: 8%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+
+.shoppingbag_small_img {
+    width: 80%;
+}
+
+.shoppingbag_text {
+    font-family: InterLight;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.shoppingbag_text_numbers {
+    font-family: InterLight;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.X {
+    display: flex;
+    justify-content: right;
+    margin-right: 40%;
+}
+

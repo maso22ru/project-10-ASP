@@ -626,7 +626,7 @@ h3 {
 }
 
 .block2_checkout {
-    background-color: blue;
+    background-color: rgb(184, 184, 227);
     margin: 5%;
 }
 
@@ -676,6 +676,14 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: left;
+}
+
+.img_delivery_card {
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
 }
 
 .dot_button {

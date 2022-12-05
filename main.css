@@ -614,3 +614,39 @@ h3 {
 
 
 
+.content_checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+
+}
+
+.block1_checkout {
+    background-color: aqua;
+    margin: 5%;
+}
+
+.block2_checkout {
+    background-color: blue;
+    margin: 5%;
+}
+
+.rubrik_checkout {
+    font-size: 1rem;
+    font-family: InterSemibold;
+    letter-spacing: 4px;
+}
+
+.text_checkout {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.proceed_to_payment {
+    background-color: black;
+    color: white;
+    font-family: InterSemibold;
+    margin: 5%;
+    width: 90%;
+    letter-spacing: 4px;
+}

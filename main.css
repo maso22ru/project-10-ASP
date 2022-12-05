@@ -627,7 +627,6 @@ h3 {
 }
 
 .block2_checkout {
-    background-color: blue;
     margin: 5%;
 }
 
@@ -649,4 +648,98 @@ h3 {
     margin: 5%;
     width: 90%;
     letter-spacing: 4px;
+}
+
+.block2_checkout{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 15rem 0.1% 10rem 0.3% 10rem;
+    grid-template-areas: 
+    "your_order_1 pris1"
+    "line1 line1"
+    "information_checkout pris2"
+    "line2 line2"
+    "total_checkout pris3";
+    font-size: 12pt;
+    font-family: InterLight;
+    letter-spacing: 2px;
+}
+
+.your_order_1{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 2px;
+    line-height: 170%;
+}
+
+.alma_checkout{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15%;
+    font-family: InterSemibold;  
+}
+
+.img_checkout_order{
+    max-height: 90%;
+    padding-right: 5%;
+}
+
+.pris1 {
+display: flex;
+
+flex-direction: column;
+justify-content: space-between ;
+padding-bottom: 40%;
+align-items: flex-end;
+}
+
+.line1{
+    display: grid;
+    grid-area: line1;
+    background-color:black;
+}
+
+.information_checkout{
+    font-size: 16pt;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: flex-start;
+    font-family: InterSemibold; 
+    padding-bottom: 20px ;
+}
+
+.pris2 {
+    font-size: 16pt;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: flex-end;
+    font-family: InterSemibold; 
+    padding-bottom: 20px;
+}
+
+.line2 {
+    display: grid;
+    grid-area: line2;
+    background-color: black;
+}
+
+.total_checkout {
+    font-size: 16pt;
+    display: flex;
+margin-top: 10px;
+font-family: InterSemibold; 
+    
+
+}
+
+.pris3 {
+    font-size: 16pt;
+display: flex;
+justify-content: flex-end;
+margin-top: 10px;
+font-family: InterSemibold; 
 }

@@ -622,7 +622,6 @@ h3 {
 }
 
 .block1_checkout {
-    background-color: aqua;
     margin: 5%;
 }
 
@@ -634,11 +633,14 @@ h3 {
     font-size: 1rem;
     font-family: InterSemibold;
     letter-spacing: 4px;
+    margin-top: 4rem;
 }
 
 .text_checkout {
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 5px;
 }
 
 .proceed_to_payment {
@@ -648,6 +650,7 @@ h3 {
     margin: 5%;
     width: 90%;
     letter-spacing: 4px;
+
 }
 
 .block2_checkout{
@@ -742,4 +745,54 @@ display: flex;
 justify-content: flex-end;
 margin-top: 10px;
 font-family: InterSemibold; 
+=======
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.delivery_option {
+    display: grid;
+    grid-template-columns: 1fr 8fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery_rubrik {
+    font-family: InterSemibold;
+    margin-top: 1rem;
+}
+
+.delivery_text {
+    font-size: 11px;
+}
+
+.img_delivery {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.img_delivery_card {
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.dot_button {
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.terms_and_condition {
+    font-size: 11px;
+    font-family: InterLight;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
 }

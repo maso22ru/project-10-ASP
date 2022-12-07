@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="main.js" defer></script>
     <link href="main.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,144 @@
     <title>Checkout</title>
 </head>
 <body>
-    <main class="container_bag_page">
-        <header class="header">
-            <a href="index.html"><img src="images/asp_vit_t.png" style="width: 70px;" class="asp"></a>
-            <div class="category">
-                <a href="productpage2.html" class="woman">WOMAN</a>
-                <a class="man">MAN</a>
-                <a class="new-in">NEW IN</a>
-                <a class="outlet">OUTLET</a>
-            </div> 
-            <div class="account">
-                <img class="search_icon" src="images/icons/search_whiter.svg" style="width: 1rem;">
-                ACCOUNT
-                <img class="bag_icon" src="images/icons/bag_whiter.svg" style="width: 1rem;">
-            </div>
-        </header>
+    <header class="header">
 
+        <div class="asp">
+            <a href="index.html"><img src="images/asp_vit_t.png" style="width: 70px;"></a>
+        </div>
+       
+
+        <div class="navbar">
+                
+                 <a class="man">MAN</a>
+                 <a class="new-in">NEW IN</a>
+                 <a class="outlet">OUTLET</a>
+
+            <div class="dropdown">
+                <button class="dropbtn" style="font: size 8vw; ;">
+                    WOMAN
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+
+                <div class="dropdown-content">
+                
+                    <div class="row">
+                        <div class="column">
+                        <h4>CLOTHES</h4>
+                        <a>Coats and Jackets</a>
+                        <a>T-Shirts</a>
+                        <a>Trousers</a>
+                        <a>Sweaters</a>
+                        <a href="productpage2.html">Blazers</a>
+                        <a>Basics</a>
+                        <a>Shirts & Blousers</a>
+                        <a>Dresses</a>
+                        <a>Underwear</a>
+                    </div>
+
+                <div class="column">
+                        <h4>SHOES</h4>
+                        <a>Sneakers</a>
+                        <a>High Heels</a>
+                        <a>Boots</a>
+                        <a>Running Shoes</a>
+                        <a>Slides & Sandals</a>
+                </div>
+
+                <div class="column">
+                        <h4>ACCESORIES</h4>
+                        <a>Belts</a>
+                        <a>Jewerly</a>
+                        <a>Sunglasses</a>
+                        <a>Scarfs</a>
+                        <a>Hats</a>
+                        <a>Gloves</a>
+                        <a>Wallets</a>
+                        <a>Bags</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hamburger-menu">
+
+        <div class="dropdown">
+            
+    
+            <div class="hamburger">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+    
+            <div class="dropdown-content">
+                <div class="man">MAN</div>
+            <div class="new-in">NEW IN</div>
+            <div class="outlet">OUTLET</div>
+            <div class="woman">WOMAN
+            
+                <div class="row">
+                    <div class="column">
+                    <h4>CLOTHES</h4>
+                    <a>Coats and Jackets</a>
+                    <a>T-Shirts</a>
+                    <a>Trousers</a>
+                    <a>Sweaters</a>
+                    <a>Blazers</a>
+                    <a>Basics</a>
+                    <a>Shirts & Blousers</a>
+                    <a>Dresses</a>
+                    <a>Underwear</a>
+                </div>
+    
+            <div class="column">
+                    <h4>SHOES</h4>
+                    <a>Sneakers</a>
+                    <a>High Heels</a>
+                    <a>Boots</a>
+                    <a>Running Shoes</a>
+                    <a>Slides & Sandals</a>
+            </div>
+    
+            <div class="column">
+                    <h4>ACCESORIES</h4>
+                    <a>Belts</a>
+                    <a>Jewerly</a>
+                    <a>Sunglasses</a>
+                    <a>Scarfs</a>
+                    <a>Hats</a>
+                    <a>Gloves</a>
+                    <a>Wallets</a>
+                    <a>Bags</a>
+            </div>
+    
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        
+            
+         
+
+        <div class="account">
+            <img class="search_icon" src="images/icons/search_whiter.svg" style="width: 1rem;">
+            <img class="account-icon" src="/images/icons/profile_vit.svg" alt="ptofileicon" style="max-width: 16px;">
+            <img class="bag_icon" src="images/icons/bag_whiter.svg" style="width: 1rem;">
+        </div>
+    </header>
+    <main class="container_bag_page">
         <div class="content_checkout">
+
             <div class="block1_checkout">
                 <div class="rubrik_checkout">
                     YOUR INFORMATION <hr>
@@ -109,7 +231,7 @@
 
                 </div>
 
-                <button class="proceed_to_payment">
+                <button onclick="showAlert()" class="proceed_to_payment">
                     <p>PROCEED TO PAYMENT</p>
                 </button>
 
@@ -119,56 +241,73 @@
                 </div>
 
             </div>
+            
             <div class="block2_checkout">
-                <div class="your_order_1">  <img class="img_checkout_order" src="images/itemimages/item1.jpg">
-               <div> <div class="alma_checkout"> Alma Stripped Blazer </div>
-                   SIZE: M <br> 
-                   COLOUR: BROWN <br> 
-                QUANTITY: - 1 + </div>
+                <div class="conteiner_1_checkout">  
+                    <div class="bild_text">
+                        <img class="img_checkout_order" src="images/itemimages/item1.jpg">
+                        <div class="text_checkout">
+                            <div class="Alma_checkout">Alma Stripped Blazer</div>
+                            <div>
+                            SIZE: M <br> 
+                            COLOUR: BROWN <br> 
+                            QUANTITY: - 1 + 
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="pris1"> 
+                        700
+                        <div class="pris1_2"> X </div> 
+                    </div> 
+                </div> 
+
+
+                <div><hr></div>
+
+                <div class="information_checkout"> 
+                    <div class="text_checkout_2">
+                        <div>VALUE</div> 
+                        <div> SHIPPING</div>
+                    </div>
+                    <div class="pris2"> 
+                        <div>700</div> 
+                        <div> FREE</div>
+                    </div>
+                </div>
+
+                <div><hr></div>
+
+                <div class="total_checkout">
+                    TOTAL
+                    <div class="pris3">700.00SEK</div>
+                </div>
+            
             </div>
-                <div class="pris1"> X 
-                    <div class="pris1_2"> 700 </div> 
 
-            </div>
-            <div class="line1"></div>
-                <div class="information_checkout"> <div>ORDER VALUE</div> 
-                <div> SHIPPING</div> </div>
-
-                <div class="pris2"> <div>700</div> 
-                <div> FREE</div> </div>
-                
-                <div class="line2"></div>
-
-                <div class="total_checkout">TOTAL</div>
-
-                <div class="pris3">700.00SEK</div>
-            </div>
-        </div>
-
-
-
-        <div class="footer">
-            <div class="our_company">
-                <h3>Our company</h3>
-                <div>About us</div>
-                <div>Suppliers</div>
-                <div>Sustainability</div>
-            </div>
-            <div class="customer_service">
-                <h3>Customer service</h3>
-                <div>frequently Asked Questions</div>
-                <div>Terms & Conditions</div>
-                <div>Delivery</div>
-                <div>Returns</div>
-            </div>
-            <div class="contacts">
-                <h3>Contact</h3>
-                <div>Email: info@ASP.contact.com</div>
-                <div>+46 70 362 00 62</div>
-                <div>Lantmätargränd 21, Jönköping</div>
-            </div>
         </div>
     </main>
+
+    <div class="footer">
+        <div class="our_company">
+            <h3>Our company</h3>
+            <div>About us</div>
+            <div>Suppliers</div>
+            <div>Sustainability</div>
+        </div>
+        <div class="customer_service">
+            <h3>Customer service</h3>
+            <div>frequently Asked Questions</div>
+            <div>Terms & Conditions</div>
+            <div>Delivery</div>
+            <div>Returns</div>
+        </div>
+        <div class="contacts">
+            <h3>Contact</h3>
+            <div>Email: info@ASP.contact.com</div>
+            <div>+46 70 362 00 62</div>
+            <div>Lantmätargränd 21, Jönköping</div>
+        </div>
+    </div>
     
 </body>
 </html>

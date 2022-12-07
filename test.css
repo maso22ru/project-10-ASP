@@ -653,10 +653,6 @@ h3 {
 
 }
 
-
-
-
-
 .block2_checkout{
     font-size: 11pt;
     font-family: InterLight;
@@ -731,9 +727,6 @@ display: flex;
     justify-content: space-between;
 }
 
-
-
-
 .delivery_option {
     display: grid;
     grid-template-columns: 1fr 8fr 3fr;
@@ -781,9 +774,9 @@ display: flex;
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 500px) {
-    .content_checkout{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    }
+@media screen and (max-width: 400px) {
+.content_checkout{
+    display: flex;
+    flex-direction: column-reverse;
+}
+}

@@ -276,6 +276,20 @@ h3 {
 
 .front_pic {
     width: 100%;
+    animation-name: animation2;
+    animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation2
+{
+    from {
+        opacity: 0%;
+          }
+          to {
+            opacity: 100%;
+          }
 }
 
 .front_text_1 {
@@ -327,6 +341,19 @@ h3 {
     "block2 block2 block2"
     "block3 block3 block3";
     min-height: 100vh;
+    animation-name: animation1;
+    animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+
+}
+@keyframes animation1 {
+    from {
+        opacity: 0%;
+          }
+          to {
+            opacity: 100%;
+          }
 }
 
 .breadcrumbs {
@@ -560,7 +587,19 @@ h3 {
     font-family: InterLight;
     margin-bottom: 2%;
     font-size: 17px;
+    animation-name: textanimation;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
     
+}
+@keyframes textanimation {
+    from {
+        transform: translateX(-60%);
+      }
+      to {
+        transform: translateX(60%);
+      }
 }
 
 .style_with_img {
